@@ -13,6 +13,9 @@ def check_keydown_events(event, ai_settings, screen, ship, bullets):
     elif event.key == pygame.K_SPACE:
         # 创建一颗子弹，并加入到编组bullets中
         fire_bullets(ai_settings, screen, bullets, ship)
+    elif event.key == pygame.K_q:
+        # 退出快捷键 无它耳
+        sys.exit()
 
 
 def fire_bullets(ai_settings, screen, bullets, ship):
