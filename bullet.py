@@ -12,7 +12,7 @@ class Bullet(Sprite):
 
         # 在位置（0，0）处创建一个表示子弹的矩阵，再设置到正确的位置
         self.rect = pygame.Rect(0, 0, ai_settings.bullet_width, ai_settings.bullet_height)
-        self.rect_centerx = ship.rect.centerx
+        self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
 
         # 储存用小数表示的子弹位置
